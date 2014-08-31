@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Acortador de direcciones</title>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+<script src="../Javascript/jquery-2.1.1.min.js" type="text/javascript">
+</script>
+<script src="../Javascript/sha256.jquery.debug.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../Javascript/acortador.js">
+</script>
+</head>
+
+<body>
+<header>
+  <h1> <img src="../Imagenes/tijeras.png" width="75" height="75" alt="logo_tijeras"><span>Acortador de enlaces</span></h1>
+</header>
+<article>
+  <input placeholder="URL" type="text" id="txtURL">
+  <input value="Acortar URL" type="button" id="btnAcortar">
+  <br>
+  <a href="#" id="aOpciones">Más opciones</a> <br>
+  <div class="ocultar">
+    <div class="triangulo"></div>
+    <div id="dOpciones" class="caja"> <br>
+      <fieldset>
+        <legend> Disponibilidad</legend>
+        <p>
+          <label>Fecha disponible:</label>
+          <input type="date" id="fechaInicio">
+        </p>
+        <p>
+          <label>Fecha vencimiento:</label>
+          <input type="date" id="fechaFin">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend> Contraseña</legend>
+        <p>
+          <label>Contraseña:</label>
+          <input type="password" id="password1">
+        </p>
+        <p>
+          <label>Repita contraseña:</label>
+          <input type="password" id="password2" >
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend> Tiempo de redireccionamiento</legend>
+        <p>
+          <label>Tiempo:</label>
+          <input type="number" value="5" id="tiempo">
+          segundos </p>
+      </fieldset>
+    </div>
+  </div>
+  <div id="enlace" class="caja"> <span id="enlaceAcortado"></span> </div>
+</article>
+</body>
+</html>
