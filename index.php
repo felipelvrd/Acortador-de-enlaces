@@ -8,6 +8,5 @@
  	}
  	else{
  		header("Location: ".$url_dominio."html/acortador.html");
-		c
  	}
 ?>
